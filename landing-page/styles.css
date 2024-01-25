@@ -18,11 +18,12 @@ li {
 
 .header {
   display: flex;
-  background-color: #1F2937
+  background-color: #1F2937;
 }
 
 .header-logo {
   margin-left: 100px;
+  align-items: center;
   font-size: 24px;
   color: #F9FAF8
 }
@@ -30,6 +31,7 @@ li {
 .navigation {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   flex: 1;
   gap: 40px;
   margin-right: 10rem;
@@ -41,12 +43,49 @@ li {
 
 .hero {
   display: flex;
+  background-color: #1F2937;
+  height: 25rem;
+  align-items: center;
+  /* justify-content: space-around; */
+  justify-content: center;
+  gap: 10rem;
 }
 
 .title {
   display: flex;
   flex-direction: column;
+  height: 200px;
+  width: 400px;
+}
+
+.title-button button {
+  background-color: #3882F6;
+  font-size: 18px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #F9FAF8;
+  font-weight: 800px;
+  border-radius: 2px;
+}
+
+.img-hero {
+  display: flex;
+}
+
+.phrase-1 {
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: 800;
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.phrase-2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+  color: #E5E7EB;
 }
 
 /* Information */
@@ -54,16 +93,46 @@ li {
 .information {
   display: flex;
   flex-direction: column;
+  height: 25rem;
 }
 
 .picture-info {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 6rem;
+  font-size: 36px;
+  font-weight: 800;
+  color: #1F2937;
 }
 
 .illustrations {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  width: 150px;
+  gap: 5px;
+}
+
+.photos img {
+  border: 2px solid #3882F6;
+  border-radius: 4px;
+}
+
+.text {
+  display: flex;
+  color: rgba(105, 105, 105, 0.83);
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Quote */
@@ -71,6 +140,7 @@ li {
 .quote {
   display: flex;
   flex-direction: column;
+  height: 22rem;
 }
 
 .phrase {
