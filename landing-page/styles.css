@@ -1,5 +1,4 @@
 * {
-  border: 1px solid red;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -46,7 +45,6 @@ li {
   background-color: #1F2937;
   height: 25rem;
   align-items: center;
-  /* justify-content: space-around; */
   justify-content: center;
   gap: 10rem;
 }
@@ -65,7 +63,8 @@ li {
   padding-right: 1rem;
   color: #F9FAF8;
   font-weight: 800px;
-  border-radius: 2px;
+  border: 2px #3882F6 solid;
+  border-radius: 4px;
 }
 
 .img-hero {
@@ -123,41 +122,88 @@ li {
 }
 
 .photos img {
-  border: 2px solid #3882F6;
+  border: 3px solid #3882F6;
   border-radius: 4px;
 }
 
 .text {
   display: flex;
   color: rgba(105, 105, 105, 0.83);
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
 /* Quote */
 
 .quote {
   display: flex;
+  background-color: #E5E7EB;
   flex-direction: column;
   height: 22rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-1 {
+  font-size: 36px;
+  width: 50rem;
+  font-style: "Light Italic";
+  font-weight: 100;
+  color: rgba(40, 40, 40, 0.78);
 }
 
 .phrase {
   display: flex;
+  width: 50rem;
   justify-content: flex-end;
+  font-size: 21px;
+  font-weight: 600;
 }
 
 /* Sign-Up */
 
 .sign-up {
   display: flex;
+  height: 18rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   display: flex;
-  flex: 1;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 55rem;
+  background-color: #3882F6;
+  gap: 10rem;
+  border-radius: 4px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-text {
+  color: #F9FAF8;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.small-text {
+  color: #F9FAF8;
+  font-size: 18px;
+}
+
+.container button {
+  background-color: #3882F6;
+  font-size: 18px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #F9FAF8;
+  font-weight: 800px;
+  border: 2px #F9FAF8 solid;
+  border-radius: 4px;
 }
 
 /* Footer */
@@ -165,4 +211,11 @@ li {
 .footer {
   display: flex;
   justify-content: center;
+  height: 5rem;
+  align-items: center;
+  background-color: #1F2937;
+}
+
+.footer div {
+  color: #F9FAF8;
 }
